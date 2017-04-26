@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mcr-Q9-3yQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Characterizer View Controller-->
+        <scene sceneID="7rt-eU-xFB">
+            <objects>
+                <viewController storyboardIdentifier="CharacterizerViewController" id="mcr-Q9-3yQ" customClass="CharacterizerViewController" customModule="RepetitionRebellion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mzf-jd-QPi"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKV-Xl-EZV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fo-Sd-rFd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="3jf-xu-AUr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="A9v-bb-dJc">
+                                <rect key="frame" x="16" y="20" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="pIV-W9-7L0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbU-ix-V31">
+                                <rect key="frame" x="16" y="109" width="174" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="77J-3i-3AU"/>
+                                    <constraint firstAttribute="height" constant="178" id="VP3-d6-RhU"/>
+                                </constraints>
+                                <state key="normal" image="RobotBody"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfq-DF-E0A">
+                                <rect key="frame" x="185" y="109" width="174" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="ehm-X3-KPz"/>
+                                    <constraint firstAttribute="height" constant="177" id="tnE-mO-7VE"/>
+                                </constraints>
+                                <state key="normal" image="WerewolfBody"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-eL-dUi">
+                                <rect key="frame" x="100" y="288" width="174" height="173"/>
+                                <state key="normal" image="HumanBody"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74e-aP-Ihg">
+                                <rect key="frame" x="16" y="462" width="174" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="Y3d-aO-PcN"/>
+                                    <constraint firstAttribute="width" constant="174" id="aOL-rS-7ZZ"/>
+                                </constraints>
+                                <state key="normal" image="AmoebaBody"/>
+                                <connections>
+                                    <segue destination="yyI-qt-8io" kind="show" id="uvX-ci-I6E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz0-fO-KA3">
+                                <rect key="frame" x="185" y="462" width="174" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="F0Y-lC-SiQ"/>
+                                    <constraint firstAttribute="height" constant="177" id="UNI-8Q-Y4C"/>
+                                </constraints>
+                                <state key="normal" image="GooBody"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="pea-si-7rK">
+                                <rect key="frame" x="0.0" y="100" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jfq-DF-E0A" secondAttribute="trailing" constant="16" id="4QS-Yq-Zhi"/>
+                            <constraint firstItem="RKV-Xl-EZV" firstAttribute="top" secondItem="74e-aP-Ihg" secondAttribute="bottom" constant="28" id="5UR-0Q-fH5"/>
+                            <constraint firstItem="A9v-bb-dJc" firstAttribute="leading" secondItem="1fo-Sd-rFd" secondAttribute="leading" constant="16" id="685-Af-NL0"/>
+                            <constraint firstAttribute="trailing" secondItem="oFC-eL-dUi" secondAttribute="trailing" constant="101" id="IYR-Tc-zy1"/>
+                            <constraint firstItem="74e-aP-Ihg" firstAttribute="leading" secondItem="1fo-Sd-rFd" secondAttribute="leading" constant="16" id="KWr-ah-OQE"/>
+                            <constraint firstItem="ZbU-ix-V31" firstAttribute="top" secondItem="A9v-bb-dJc" secondAttribute="bottom" constant="24" id="N7b-73-8Oa"/>
+                            <constraint firstItem="pz0-fO-KA3" firstAttribute="top" secondItem="oFC-eL-dUi" secondAttribute="bottom" constant="1" id="Twh-7I-AeV"/>
+                            <constraint firstItem="A9v-bb-dJc" firstAttribute="top" secondItem="mzf-jd-QPi" secondAttribute="bottom" id="W4O-v7-oMP"/>
+                            <constraint firstItem="ZbU-ix-V31" firstAttribute="leading" secondItem="1fo-Sd-rFd" secondAttribute="leading" constant="16" id="cK2-gG-XD1"/>
+                            <constraint firstAttribute="trailing" secondItem="A9v-bb-dJc" secondAttribute="trailing" constant="16" id="fbw-yM-Qvs"/>
+                            <constraint firstItem="oFC-eL-dUi" firstAttribute="leading" secondItem="1fo-Sd-rFd" secondAttribute="leading" constant="100" id="llo-Ny-mGl"/>
+                            <constraint firstItem="RKV-Xl-EZV" firstAttribute="top" secondItem="pz0-fO-KA3" secondAttribute="bottom" constant="28" id="nky-Re-GQG"/>
+                            <constraint firstItem="oFC-eL-dUi" firstAttribute="top" secondItem="ZbU-ix-V31" secondAttribute="bottom" constant="1" id="nzQ-la-sfz"/>
+                            <constraint firstAttribute="trailing" secondItem="pz0-fO-KA3" secondAttribute="trailing" constant="16" id="qIb-BK-Kmj"/>
+                            <constraint firstItem="Jfq-DF-E0A" firstAttribute="top" secondItem="A9v-bb-dJc" secondAttribute="bottom" constant="24" id="ycd-7E-dbH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ameobaBody" destination="74e-aP-Ihg" id="MWI-ux-gcV"/>
+                        <outlet property="gooButton" destination="pz0-fO-KA3" id="7tC-qs-6MW"/>
+                        <outlet property="humanButton" destination="oFC-eL-dUi" id="Vyu-g6-faP"/>
+                        <outlet property="robotButton" destination="ZbU-ix-V31" id="JxR-DC-U5i"/>
+                        <outlet property="werewolfButton" destination="Jfq-DF-E0A" id="FIW-c7-4ec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rth-Aj-B6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496.8" y="138.98050974512745"/>
+        </scene>
+        <!--Characterizer Detail View Controller-->
+        <scene sceneID="LdF-QN-VXB">
+            <objects>
+                <viewController storyboardIdentifier="CharacterizerDetailViewController" id="yyI-qt-8io" customClass="CharacterizerDetailViewController" customModule="RepetitionRebellion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Urs-r4-LrY"/>
+                        <viewControllerLayoutGuide type="bottom" id="gU9-Ax-TlQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CF8-QS-2G1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-p4-zgi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-je-MfW">
+                                <rect key="frame" x="-3" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amoeba_White_Body" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-XS-3fx">
+                                <rect key="frame" x="40" y="28" width="188" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="5Kj-I1-JUL"/>
+                                    <constraint firstAttribute="height" constant="177" id="SD6-NE-uBK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_Stand" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-NN-UPg">
+                                <rect key="frame" x="16" y="213" width="240" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="MrL-Lf-aTa"/>
+                                    <constraint firstAttribute="width" constant="240" id="NOS-Id-VJB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Save" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-i3-faS">
+                                <rect key="frame" x="306" y="52" width="62" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VAf-5K-U9f"/>
+                                    <constraint firstAttribute="width" constant="62" id="pje-J9-rnF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paint_brush" translatesAutoresizingMaskIntoConstraints="NO" id="87P-wc-ODw">
+                                <rect key="frame" x="236" y="52" width="62" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="JeE-f7-Nx9"/>
+                                    <constraint firstAttribute="height" constant="50" id="wZr-De-D1O"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Load_Folder" translatesAutoresizingMaskIntoConstraints="NO" id="4S0-dF-ijX">
+                                <rect key="frame" x="306" y="110" width="62" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="eE6-uu-Orz"/>
+                                    <constraint firstAttribute="height" constant="50" id="vx6-Sq-4OB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eyes_Mouth_Instructions" translatesAutoresizingMaskIntoConstraints="NO" id="B7v-Xc-BHi">
+                                <rect key="frame" x="16" y="328" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="rVo-0T-2fZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amoeba_White_Eyes_1" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-83-94I">
+                                <rect key="frame" x="89" y="75" width="97" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="2jL-CG-39P"/>
+                                    <constraint firstAttribute="width" constant="97" id="PfY-Na-30A"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amoeba_White_Mouth_1" translatesAutoresizingMaskIntoConstraints="NO" id="pHw-R5-Lpf">
+                                <rect key="frame" x="81" y="115" width="105" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Jl-IE-FOj"/>
+                                    <constraint firstAttribute="width" constant="105" id="hJZ-O7-eUw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9pP-UP-0x4">
+                                <rect key="frame" x="16" y="504" width="343" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nws-tr-p2t">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Mouth_1"/>
+                                        <connections>
+                                            <action selector="ameobaMouth1:" destination="yyI-qt-8io" eventType="touchUpInside" id="kNQ-JR-y3G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVV-Rz-bAs">
+                                        <rect key="frame" x="119.5" y="0.0" width="104" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Mouth_2"/>
+                                        <connections>
+                                            <action selector="ameobaMouth2:" destination="yyI-qt-8io" eventType="touchUpInside" id="ei6-vG-mNx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whP-ed-4iV">
+                                        <rect key="frame" x="238.5" y="0.0" width="104.5" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Mouth_3"/>
+                                        <connections>
+                                            <action selector="ameobaMouth3:" destination="yyI-qt-8io" eventType="touchUpInside" id="VZZ-gg-mNj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QzG-FV-B5c"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZBV-bo-jV1">
+                                <rect key="frame" x="16" y="388" width="343" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWz-hd-kls">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Eyes_1"/>
+                                        <connections>
+                                            <action selector="ameobaEye1:" destination="yyI-qt-8io" eventType="touchUpInside" id="rmG-Rn-emn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkP-wf-3Y9">
+                                        <rect key="frame" x="119.5" y="0.0" width="104" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Eyes_2"/>
+                                        <connections>
+                                            <action selector="ameobaEye2:" destination="yyI-qt-8io" eventType="touchUpInside" id="HEm-5d-BrS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-6a-p7Q">
+                                        <rect key="frame" x="238.5" y="0.0" width="104.5" height="100"/>
+                                        <state key="normal" image="Amoeba_White_Eyes_3"/>
+                                        <connections>
+                                            <action selector="ameobaEye3:" destination="yyI-qt-8io" eventType="touchUpInside" id="eBN-Jv-4gm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eq6-vU-WaO"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Color_Swatches" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-OX-8hP">
+                                <rect key="frame" x="16" y="609" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bPA-t6-uF5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qHs-k1-qCa">
+                                <rect key="frame" x="30" y="619" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cba-e2-w16">
+                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="30"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-yQ-mxl">
+                                        <rect key="frame" x="35.5" y="0.0" width="35.5" height="30"/>
+                                        <connections>
+                                            <action selector="blue:" destination="yyI-qt-8io" eventType="touchUpInside" id="ixj-IE-qxq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxK-Sc-4Cb">
+                                        <rect key="frame" x="71" y="0.0" width="35.5" height="30"/>
+                                        <connections>
+                                            <action selector="green:" destination="yyI-qt-8io" eventType="touchUpInside" id="gxV-8j-qbD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IR-Lv-1Pj">
+                                        <rect key="frame" x="106.5" y="0.0" width="35.5" height="30"/>
+                                        <connections>
+                                            <action selector="yellow:" destination="yyI-qt-8io" eventType="touchUpInside" id="gXT-nL-9E9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cms-8e-zpn">
+                                        <rect key="frame" x="142" y="0.0" width="36" height="30"/>
+                                        <connections>
+                                            <action selector="orange:" destination="yyI-qt-8io" eventType="touchUpInside" id="Cke-5E-zh5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-aQ-Hgr">
+                                        <rect key="frame" x="178" y="0.0" width="35.5" height="30"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYV-05-2Ff">
+                                        <rect key="frame" x="213.5" y="0.0" width="35.5" height="30"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY8-91-cmq">
+                                        <rect key="frame" x="249" y="0.0" width="35.5" height="30"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-aO-0DI">
+                                        <rect key="frame" x="284.5" y="0.0" width="35.5" height="30"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZHL-Bt-HBh"/>
+                                    <constraint firstAttribute="width" constant="320" id="aht-eV-G26"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-b4-U2u">
+                                <rect key="frame" x="306" y="168" width="53" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="0PG-e8-udb"/>
+                                    <constraint firstAttribute="width" constant="53" id="Zd9-Cw-CWM"/>
+                                </constraints>
+                                <state key="normal" image="Back_Arrow"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="yyI-qt-8io" eventType="touchUpInside" id="zhN-yC-ZuE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B7v-Xc-BHi" firstAttribute="top" secondItem="Ig5-NN-UPg" secondAttribute="bottom" constant="8" id="2As-KO-VdI"/>
+                            <constraint firstItem="7oo-p4-zgi" firstAttribute="bottom" secondItem="gU9-Ax-TlQ" secondAttribute="top" id="2n2-ru-gIN"/>
+                            <constraint firstItem="k3t-i3-faS" firstAttribute="top" secondItem="Urs-r4-LrY" secondAttribute="bottom" constant="32" id="4Ss-ni-kcO"/>
+                            <constraint firstItem="gU9-Ax-TlQ" firstAttribute="top" secondItem="E4Y-OX-8hP" secondAttribute="bottom" constant="8" id="57x-fx-cmC"/>
+                            <constraint firstItem="Ig5-NN-UPg" firstAttribute="top" secondItem="Rsh-XS-3fx" secondAttribute="bottom" constant="8" id="6Ow-2L-Met"/>
+                            <constraint firstItem="B7v-Xc-BHi" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="6ik-Hr-RRy"/>
+                            <constraint firstAttribute="trailing" secondItem="4S0-dF-ijX" secondAttribute="trailing" constant="7" id="BxQ-Vu-y9c"/>
+                            <constraint firstItem="ZBV-bo-jV1" firstAttribute="centerX" secondItem="7oo-p4-zgi" secondAttribute="centerX" id="DP6-NA-12N"/>
+                            <constraint firstAttribute="trailing" secondItem="E4Y-OX-8hP" secondAttribute="trailing" constant="16" id="EqD-J7-4zg"/>
+                            <constraint firstItem="k3t-i3-faS" firstAttribute="leading" secondItem="87P-wc-ODw" secondAttribute="trailing" constant="8" id="FLa-c1-1mR"/>
+                            <constraint firstItem="E4Y-OX-8hP" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="GUe-7X-hYH"/>
+                            <constraint firstItem="7oo-p4-zgi" firstAttribute="top" secondItem="ukl-je-MfW" secondAttribute="top" id="IOd-Ov-r4O"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBV-bo-jV1" secondAttribute="trailing" constant="16" id="JRR-Kh-U26"/>
+                            <constraint firstAttribute="trailing" secondItem="E4Y-OX-8hP" secondAttribute="trailing" constant="16" id="Jsr-ry-SqD"/>
+                            <constraint firstItem="9pP-UP-0x4" firstAttribute="top" secondItem="ZBV-bo-jV1" secondAttribute="bottom" constant="16" id="LPJ-bW-wCM"/>
+                            <constraint firstAttribute="trailing" secondItem="Pf0-b4-U2u" secondAttribute="trailing" constant="16" id="NmP-bJ-kWG"/>
+                            <constraint firstItem="E4Y-OX-8hP" firstAttribute="top" secondItem="9pP-UP-0x4" secondAttribute="bottom" constant="5" id="RHI-DQ-xeH"/>
+                            <constraint firstAttribute="trailing" secondItem="k3t-i3-faS" secondAttribute="trailing" constant="7" id="T36-e8-S1B"/>
+                            <constraint firstItem="9pP-UP-0x4" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="UAa-ly-2IP"/>
+                            <constraint firstItem="Rsh-XS-3fx" firstAttribute="top" secondItem="Urs-r4-LrY" secondAttribute="bottom" constant="8" id="YjY-c1-PJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="B7v-Xc-BHi" secondAttribute="trailing" constant="16" id="ajL-NS-WKN"/>
+                            <constraint firstItem="87P-wc-ODw" firstAttribute="top" secondItem="Urs-r4-LrY" secondAttribute="bottom" constant="32" id="aqK-Io-HMk"/>
+                            <constraint firstItem="pHw-R5-Lpf" firstAttribute="top" secondItem="Urs-r4-LrY" secondAttribute="bottom" constant="95" id="bW2-EO-foO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ukl-je-MfW" secondAttribute="trailing" constant="-13" id="bZw-Fi-SOC"/>
+                            <constraint firstItem="Ig5-NN-UPg" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="cPs-g0-dLQ"/>
+                            <constraint firstItem="ZBV-bo-jV1" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="cWX-5s-QQt"/>
+                            <constraint firstItem="pHw-R5-Lpf" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="81" id="ccm-xB-Osr"/>
+                            <constraint firstItem="Rsh-XS-3fx" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="40" id="dAS-jk-XMu"/>
+                            <constraint firstItem="7oo-p4-zgi" firstAttribute="top" secondItem="CF8-QS-2G1" secondAttribute="top" id="eLN-45-itk"/>
+                            <constraint firstItem="4S0-dF-ijX" firstAttribute="leading" secondItem="pHw-R5-Lpf" secondAttribute="trailing" constant="120" id="iYh-9q-mQb"/>
+                            <constraint firstItem="Pf0-b4-U2u" firstAttribute="top" secondItem="4S0-dF-ijX" secondAttribute="bottom" constant="8" id="kPe-Bz-8Ep"/>
+                            <constraint firstItem="SzJ-83-94I" firstAttribute="top" secondItem="Urs-r4-LrY" secondAttribute="bottom" constant="55" id="nBq-lc-QWr"/>
+                            <constraint firstItem="4S0-dF-ijX" firstAttribute="top" secondItem="k3t-i3-faS" secondAttribute="bottom" constant="8" id="oj4-he-was"/>
+                            <constraint firstItem="qHs-k1-qCa" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="30" id="pzE-7T-b3Z"/>
+                            <constraint firstAttribute="trailing" secondItem="9pP-UP-0x4" secondAttribute="trailing" constant="16" id="q3A-Xj-tKP"/>
+                            <constraint firstItem="SzJ-83-94I" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="89" id="rSy-Ch-9C1"/>
+                            <constraint firstItem="E4Y-OX-8hP" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" constant="16" id="rXA-KX-PjD"/>
+                            <constraint firstItem="qHs-k1-qCa" firstAttribute="top" secondItem="9pP-UP-0x4" secondAttribute="bottom" constant="15" id="u3f-1i-dfW"/>
+                            <constraint firstItem="7oo-p4-zgi" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leading" id="uzs-E8-gKF"/>
+                            <constraint firstItem="7oo-p4-zgi" firstAttribute="bottom" secondItem="ukl-je-MfW" secondAttribute="bottom" id="vcC-gk-VYm"/>
+                            <constraint firstItem="ukl-je-MfW" firstAttribute="leading" secondItem="CF8-QS-2G1" secondAttribute="leadingMargin" constant="-19" id="xKD-C7-GGt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ameobaBody" destination="Rsh-XS-3fx" id="l4V-9R-SZB"/>
+                        <outlet property="ameobaEye1" destination="XWz-hd-kls" id="ZJh-rO-16M"/>
+                        <outlet property="ameobaEye2" destination="zkP-wf-3Y9" id="MZG-wt-SDq"/>
+                        <outlet property="ameobaEye3" destination="Zo4-6a-p7Q" id="2Ob-fb-40d"/>
+                        <outlet property="ameobaEyes" destination="SzJ-83-94I" id="0sn-V6-ANF"/>
+                        <outlet property="ameobaMouth" destination="pHw-R5-Lpf" id="Znp-Ts-acC"/>
+                        <outlet property="ameobaMouth1" destination="nws-tr-p2t" id="eoU-jj-XIE"/>
+                        <outlet property="ameobaMouth2" destination="hVV-Rz-bAs" id="emv-to-2Oh"/>
+                        <outlet property="ameobaMouth3" destination="whP-ed-4iV" id="1Uz-2d-4Ck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIV-9p-djO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189.5999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AmoebaBody" width="198" height="202"/>
+        <image name="Amoeba_White_Body" width="256" height="260"/>
+        <image name="Amoeba_White_Eyes_1" width="93" height="62"/>
+        <image name="Amoeba_White_Eyes_2" width="109" height="61"/>
+        <image name="Amoeba_White_Eyes_3" width="109" height="53"/>
+        <image name="Amoeba_White_Mouth_1" width="83" height="37"/>
+        <image name="Amoeba_White_Mouth_2" width="72" height="56"/>
+        <image name="Amoeba_White_Mouth_3" width="87" height="50"/>
+        <image name="Avatar_Stand" width="325" height="155"/>
+        <image name="Back_Arrow" width="82" height="85"/>
+        <image name="Color_Swatches" width="557" height="84"/>
+        <image name="Eyes_Mouth_Instructions" width="442" height="62"/>
+        <image name="GooBody" width="160" height="110"/>
+        <image name="HumanBody" width="129" height="219"/>
+        <image name="Load_Folder" width="90" height="76"/>
+        <image name="RobotBody" width="172" height="208"/>
+        <image name="Save" width="87" height="83"/>
+        <image name="Space" width="2564" height="1920"/>
+        <image name="Stars" width="2564" height="1920"/>
+        <image name="Text" width="432" height="79"/>
+        <image name="WerewolfBody" width="150" height="175"/>
+        <image name="paint_brush" width="83" height="82"/>
+    </resources>
+</document>
