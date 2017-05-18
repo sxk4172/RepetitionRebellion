@@ -1,0 +1,6 @@
+framework module Pods_RepetitionRebellion {
+  umbrella header "Pods-RepetitionRebellion-umbrella.h"
+
+  export *
+  module * { export * }
+}
